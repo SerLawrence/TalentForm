@@ -1,0 +1,132 @@
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "a b c";
+}
+
+header, footer {
+    border: 1px solid black;
+    text-align: center;
+    margin: 5px;
+}
+
+header img {
+    display: block;
+    height: 150px;
+}
+
+#message {
+    height: 50px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 5px;
+    grid-area: c;
+}
+
+nav {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 5px 0;
+    color: black;
+}
+
+nav a:hover {
+    color: blue;
+}
+
+.main-container {
+    display: flex;
+}
+
+main {
+    border: 1px solid black;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+#we-are {
+    height: 200px;
+}
+
+main p {
+    margin: 0;
+}
+
+main input {
+    margin: 5px 0;
+}
+
+#contact{
+    height: 100px;
+}
+
+#we {
+    height: 200px;
+}
+
+#code {
+    height: 200px;
+}
+
+footer {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer img {
+    height: 50px;
+    margin: 5px;
+}
+
+#insta {
+    height: 42px;
+}
+
+button {
+    margin: 0 5px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+nav, main, header, footer {
+    border-radius: 8px;
+}
+
+@media screen and (max-width:900px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+    }
+    nav, main {
+        width: auto;
+    }
+    footer {
+        padding: 10px;
+    }
+}

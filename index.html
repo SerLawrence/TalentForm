@@ -1,0 +1,145 @@
+Marco Draeyn, [01/03/2024 14:55]
+header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "a b c";
+        }
+
+Marco Draeyn, [01/03/2024 14:56]
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Madimi One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-areas:
+            "a b c";
+        }
+        
+        header, footer {
+            border: 1px solid black;
+            text-align: center;
+            margin: 5px;
+        }
+ 
+
+        #logo{
+            grid-area: b;
+        }
+
+        #logo img{
+            margin: auto;
+            display: block;
+            height: 200px;
+        }
+
+        #link{
+            grid-area: c;
+            margin: auto;
+            display: block;
+            height: 100px;
+        }
+ 
+        nav {
+            width: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            padding: 10px;
+            margin: 5px;
+        }
+ 
+        nav a {
+            text-decoration: none;
+            margin: 5px 0;
+        }
+ 
+        .main-container {
+            display: flex;
+        }
+ 
+        main {
+            border: 1px solid black;
+            width: 100%;
+            margin: 5px;
+            text-align: center;
+            padding: 10px;
+        }
+        main input {
+            margin: 5px 0;
+        }
+ 
+        footer {
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+ 
+        footer img {
+            height: 50px;
+        }
+ 
+        button {
+            margin: 0 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        @media screen and (max-width:800px) {
+            .main-container {
+                display: flex;
+                flex-direction: column;
+            }
+            nav, main {
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+ 
+    <header>
+        <a id="logo" href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVxJYNUcX0MRn7sCoU8U_XBQQ9rHQ8aEpEDN9sy43FFQ&s" alt="team3-logo"></a>
+        <a id="link" href="contatti.html"><img src="https://icons.iconarchive.com/icons/graphicloads/100-flat/72/email-2-icon.png" alt="message-logo"></a>
+    </header>
+ 
+    <div class="main-container">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="contatti.html">CONTATTI</a>
+        </nav>
+ 
+        <main>
+            <img src="codefuture.png" alt="foto code">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum expedita officiis eius deleniti. Recusandae, soluta corrupti dolorem numquam consequatur dicta, voluptatibus placeat impedit amet aspernatur accusantium itaque maiores adipisci quisquam.</p>
+        </main>
+ 
+    </div>
+ 
+    <footer>
+        <button><img src="https://icons.iconarchive.com/icons/yootheme/social-bookmark/512/social-facebook-box-blue-icon.png" alt="fb-logo"></button>
+        <button><img id="insta" src="https://icons.iconarchive.com/icons/designbolts/free-instagram/128/Active-Instagram-3-icon.png" alt="insta-logo"></button>
+        <button><img src="https://icons.iconarchive.com/icons/dtafalonso/android-l/128/WhatsApp-icon.png" alt="whastapp-logo"></button>
+    </footer>
+</body>
+</html>
